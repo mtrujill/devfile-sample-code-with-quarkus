@@ -11,7 +11,7 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        String myGreeting = System.getenv("myValue");
+        String myGreeting = System.getenv("testKey");
         return "Hello " + myGreeting;
     }
 }
